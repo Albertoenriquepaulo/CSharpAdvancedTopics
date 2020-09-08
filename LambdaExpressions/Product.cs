@@ -1,0 +1,11 @@
+﻿using System;
+
+namespace LambdaExpressions
+{
+    public class Product
+    {
+        public string Title { get; set; }
+        public float Price { get; set; }
+    }
+
+}
