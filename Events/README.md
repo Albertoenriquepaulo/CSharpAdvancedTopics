@@ -85,9 +85,9 @@ We can use those delegates instead of creating our own. We do not have to create
     //EventHandler and it comes in two forms:
     // 1- EventHandler, normal form
     // 2- EventHandler<TEventArgs>, Generic form
-    //So, we can use that delegate instead of cxeating our own. We do not have to create a delegate explicitly
+    //So, we can use that delegate instead of creating our own. We do not have to create a delegate explicitly
 
-	//equivalent to this + the event "public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args);"
+	//Equivalent to this + the event "public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args);"
     public event EventHandler<VideoEventArgs> VideoEncoded; 
 
     //If we do not send any data we can use the normal form like this
