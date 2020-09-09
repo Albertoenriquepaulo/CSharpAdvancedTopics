@@ -1,5 +1,4 @@
-﻿using LambdaExpressions.LuisDuran;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -46,21 +45,6 @@ namespace LambdaExpressions
             {
                 Console.WriteLine(book.Title);
             }
-
-
-            //////*********************************************************/
-
-            ////IGroupElement myGroup = new xGroup();
-            ////IGroupElement myElement = new xElement();
-
-            ////IGroupElement groupElement;
-
-            ////TestMethod(myGroup, "newGroup");
-            ////TestMethod(myElement, "newElement");
-
-            ////bool IsxGroupType = typeof(xGroup) == myGroup.GetType();
-            ////string typeOfIGroupElement = myGroup.GetType().ToString();
-
         }
 
         // This is used as a Predicate function in Way 1
@@ -68,30 +52,5 @@ namespace LambdaExpressions
         {
             return book.Price < 10;
         }
-
-        static void TestMethod(IGroupElement item, string newName)
-        {
-            if (typeof(xGroup) == item.GetType())
-            {
-                item.Name = newName + "_eresDelTipo->xGroup";
-            }
-            else if (typeof(xElement) == item.GetType())
-            {
-                item.Name = newName + "_eresDelTipo->xElement";
-            }
-        }
-
-        //static void TestMethodforAny(xGroup itemGroup = null, xElement itemElement = null,string newName)
-        //{
-        //    if (itemGroup != null)
-        //    {
-        //        itemGroup.Name = newName + "_eresDelTipo->xGroup";
-        //    }
-        //    else if(itemElement != null)
-        //    {
-        //        itemElement.Name = newName + "_eresDelTipo->xElement";
-        //    }
-
-        //}
     }
 }
